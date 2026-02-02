@@ -23,9 +23,6 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSend, isLoading }) => {
   useEffect(() => {
     if (transcript) {
       setInput(prev => {
-        // Simple logic to avoid duplicating if the transcript is appending
-        // Ideally, you'd manage cursor position, but for a simple chat, appending is okay.
-        // We'll just replace for now or append if input was manually typed.
         if (prev.endsWith(transcript)) return prev;
         return prev + (prev && !prev.endsWith(' ') ? ' ' : '') + transcript;
       });

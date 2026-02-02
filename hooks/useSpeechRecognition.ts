@@ -40,11 +40,10 @@ export const useSpeechRecognition = (): UseSpeechRecognitionReturn => {
           }
         }
         
-        // We prioritize final, but show interim for feedback
+        
         if (finalTranscript) {
              setTranscript(prev => {
-                // Determine if we need a space. 
-                // Simple logic: if prev is not empty, add space.
+                // if prev is not empty, add space.
                 const prefix = prev.trim() ? ' ' : '';
                 return prev + prefix + finalTranscript;
              });

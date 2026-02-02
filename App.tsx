@@ -39,7 +39,7 @@ const App: React.FC = () => {
     } catch (err: any) {
       console.error(err);
       setError(err.message || "Something went wrong.");
-      // Optional: Add a system message to chat to inform user visually
+      // system message to chat to inform user visually
       const errorMsg: Message = {
         id: uuidv4(),
         role: Role.MODEL,
@@ -55,7 +55,7 @@ const App: React.FC = () => {
   return (
     <div className="flex flex-col h-screen bg-gradient-to-br from-[#0f172a] to-[#1e3a8a] text-white overflow-hidden font-sans">
       
-      {/* Header (Minimal) */}
+      
       <header className="absolute top-0 left-0 p-6 z-10 flex items-center gap-3 opacity-80 hover:opacity-100 transition-opacity">
         <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-blue-900/50">
            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-white">
@@ -65,7 +65,7 @@ const App: React.FC = () => {
         <span className="font-semibold tracking-wide text-sm text-slate-200">Aura</span>
       </header>
 
-      {/* Main Content Area */}
+     
       <main className="flex-1 flex flex-col relative w-full h-full pt-16">
         {messages.length === 0 ? (
           <Greeting onSuggestionClick={handleSendMessage} />
@@ -74,7 +74,7 @@ const App: React.FC = () => {
         )}
       </main>
 
-      {/* Input Area */}
+     
       <footer className="w-full">
         <ChatInput onSend={handleSendMessage} isLoading={isLoading} />
       </footer>
