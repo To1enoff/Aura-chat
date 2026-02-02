@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              aura: {
+                900: '#0B1120', // Deepest Navy
+                800: '#0F172A',
+                700: '#1E293B',
+                600: '#334155',
+                accent: '#3B82F6', // Professional Blue
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar for Webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "uuid": "https://esm.sh/uuid@^13.0.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/Aura-chat/assets/index-BRsAYtE3.js"></script>
+</head>
+  <body class="bg-aura-900 text-slate-200 antialiased overflow-hidden">
+    <div id="root"></div>
+</body>
+</html>
