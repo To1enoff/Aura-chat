@@ -1,4 +1,5 @@
 
+ https://to1enoff.github.io/Aura-chat/
 ## Run Locally
 
 **Prerequisites:**  Node.js
@@ -9,3 +10,6 @@
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+
+ https://to1enoff.github.io/Aura-chat/
