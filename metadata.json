@@ -1,0 +1,7 @@
+{
+  "name": "Aura Chat",
+  "description": "A pristine, minimalistic AI chat interface designed with intentionality and focus.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
