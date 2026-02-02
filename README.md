@@ -1,6 +1,7 @@
 
  https://to1enoff.github.io/Aura-chat/
-## Run Locally
+ 
+## Or Run Locally
 
 **Prerequisites:**  Node.js
 
